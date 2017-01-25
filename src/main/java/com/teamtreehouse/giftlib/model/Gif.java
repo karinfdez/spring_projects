@@ -7,14 +7,27 @@ public class Gif {
 	private LocalDate dateUploaded;
 	private String username;
 	private boolean favorite;
+	private int categoryId;
 	
 	
-	public Gif(String name, LocalDate dateUploaded, String username, boolean favorite) {
+	public Gif(String name, int categoryId, LocalDate dateUploaded, String username, boolean favorite) {
 		this.name = name;
+		this.categoryId=categoryId;
 		this.dateUploaded = dateUploaded;
 		this.username = username;
 		this.favorite = favorite;
 	}
+
+	
+	public int getCategoryId() {
+		return categoryId;
+	}
+
+
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
+	}
+
 
 	public String getName() {
 		return name;
